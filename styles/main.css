@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    marging: 0;
+}
+
+.container-fluid {
+    background-image: url("../images/paper.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    background-color: beige;
+    border-radius: 4px;
+    display: inline;
+}
+
+.header {
+    background-color: #393b44;
+    opacity: 75%;
+    padding: 2.5%;
+}
+
+.header-logo {
+    border-radius: 100%;
+}
+
+.header-title {
+    padding-top: 10px;
+}
+
