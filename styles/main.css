@@ -29,9 +29,10 @@ li {
 }
 
 .header {
-    background-color: #393b44;
-    opacity: 75%;
+    background-color: #206a5d;
+    opacity: 85%;
     padding: 2.5%;
+    border-radius: 0 0 4px 4px;;
 }
 
 .header-logo {
@@ -39,6 +40,7 @@ li {
 }
 
 .header-title {
-    padding-top: 10px;
+    color: #bfdcae;
+    margin: auto;
 }
 
