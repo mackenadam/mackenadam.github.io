@@ -23,24 +23,46 @@ ul {
   }
 
 li {
-    background-color: beige;
+    background-color: #045562;
     border-radius: 4px;
+    color: #a3d2ca;
     display: inline;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 1px 2px 2px #034049;
 }
 
-.header {
-    background-color: #206a5d;
+li:hover {
+    background-color: #022b31;
+    cursor: pointer;
+}
+
+#header {
+    background-color: #045562;
     opacity: 85%;
     padding: 2.5%;
-    border-radius: 0 0 4px 4px;;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 3px 3px #022b31;
 }
 
 .header-logo {
     border-radius: 100%;
+    opacity: 100%;
 }
 
-.header-title {
-    color: #bfdcae;
+.header-title-container {
     margin: auto;
 }
 
+.header-title {
+    color: #e8ded2;
+    opacity: 100%;
+    font-size: 3em;
+}
+
+#navi {
+    background-color: #056b7a;
+    opacity: 85%;
+    padding: 2%;
+    border-radius: 0 0 4px 4px;
+}
