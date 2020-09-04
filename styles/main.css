@@ -1,7 +1,12 @@
 body {
     color: #022b31;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
-    marging: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .container-fluid {
