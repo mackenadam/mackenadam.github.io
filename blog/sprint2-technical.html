@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Stories and Legends</title>
+    <title>Core CSS - Padding, borders, and margins</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Technical blog 1</a>
+            <a class="dropdown-item" href="sprint1-technical.html">Technical blog 1</a>
             <a class="dropdown-item" href="#">Personal blog 1</a>
             <a class="dropdown-item" href="#">Technical blog 2</a>
             <div class="dropdown-divider"></div>
@@ -42,20 +42,27 @@
         </li>
       </ul>
 
-      <div>
-        <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-        <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-        <h3>10 November 2010</h3>
-    
-        <p>
-          Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-        </p>
-        <p>
-          Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-        </p>
-        <p>
-          While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-        </p>
+      <div class="row">
+        <div class="col-md-12">
+          <div class=blog-post>
+            <h1>Core CSS - Padding, border, and margins</h1>
+            <h2>Sprint 2 Technical Blog 2</h2>
+            <h3>10 November 2010</h3>
+            <hr>
+            <h2></h2>
+            <p>
+              When you first jump into CSS you might be a bit confused when it comes to padding and margins. On the surface of it they seem to both deal with the same thing; the space around the element you are trying to style. However, there are a couple of key differences between the two which make them behave very differently. In this technical blog we will look at some of the differences between the two and a few use cases.
+            </p>
+            <h2>Let's talk about borders</h2>
+            <p>
+              To describe padding and margins it is first important to understand borders. Essentially, borders are the edge of a given element. Sometimes borders are a simple 1px wide black rectangle around an element. Sometimes they are a dotted line with rounded Borders. Often the border isn't styled at all and it's impossible to see where it is without the use of developer tools. Borders take many different forms and sometimes it can be hard for a beginner to find where the border of an element lies.
+            </p>
+            <h2>Padding sounds... Soft</h2>
+            <p>
+              Now that we know what a border is we can talk about padding. Applying padding to an element gives the content inside it a 'cushion' of dead space between it and the border. Think of your content as an important object you are sending out for delivery. The padding is like the bubble-wrap surrounding your important object, and the border is the box it is delivered in. It provides a gap between the object and the box so it the package is dropped then the contents aren't damaged. Now, our padding doesn't actually physically protect the content in any way but  It follows all the rules laid out for the 
+            </p>
+          </div>   
+        </div>
       </div>
 
     </div>
