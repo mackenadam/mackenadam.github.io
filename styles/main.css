@@ -1,4 +1,5 @@
 body {
+    color: #022b31;
     padding: 0;
     marging: 0;
 }
@@ -10,6 +11,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
+    opacity: 95%;
 }
 
 .row {
@@ -57,7 +59,9 @@ li:hover {
 .header-title {
     color: #e8ded2;
     opacity: 100%;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 3em;
+    margin: auto;
 }
 
 #navi {
@@ -65,4 +69,8 @@ li:hover {
     opacity: 85%;
     padding: 2%;
     border-radius: 0 0 4px 4px;
+}
+
+#main-body {
+    padding: 7%;
 }
