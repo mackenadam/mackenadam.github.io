@@ -42,25 +42,61 @@
         </li>
       </ul>
 
-      <div class="row">
+      <div class="row blog-post">
         <div class="col-md-12">
-          <div class=blog-post>
-            <h1>Core CSS - Padding, border, and margins</h1>
+          <h1>Core CSS - Padding, border, and margins</h1>
             <h2>Sprint 2 Technical Blog 2</h2>
             <h3>10 November 2010</h3>
-            <hr>
-            <h2></h2>
-            <p>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+          <h2>What's all this about then?</h2>
+          <p>
               When you first jump into CSS you might be a bit confused when it comes to padding and margins. On the surface of it they seem to both deal with the same thing; the space around the element you are trying to style. However, there are a couple of key differences between the two which make them behave very differently. In this technical blog we will look at some of the differences between the two and a few use cases.
-            </p>
-            <h2>Let's talk about borders</h2>
-            <p>
+          </p>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+          <h2>Let's talk about borders</h2>
+          <p>
               To describe padding and margins it is first important to understand borders. Essentially, borders are the edge of a given element. Sometimes borders are a simple 1px wide black rectangle around an element. Sometimes they are a dotted line with rounded Borders. Often the border isn't styled at all and it's impossible to see where it is without the use of developer tools. Borders take many different forms and sometimes it can be hard for a beginner to find where the border of an element lies.
-            </p>
-            <h2>Padding sounds... Soft</h2>
+          </p>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+          <h2>Padding sounds nice</h2>
+          <p>
+              Now that we know what a border is we can talk about padding. Applying padding to an element gives the content inside it a 'cushion' of dead space between it and the border. Think of your content as an important object you are sending out for delivery. The padding is like the bubble-wrap surrounding your important object, and the border is the box it is delivered in. It provides a gap between the object and the box so it the package is dropped then the contents aren't damaged. Now, our padding doesn't actually physically protect the content in any way but take a look at the diagram below and see how our metaphor works. Furthermore, our padding follows all the rules laid out for the element it is applied to. The positioning should stay more or less the same because we are not changing the physical size of our element and any background colour, or images, will also be applied to the padding.
+          </p>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+          <img src="../images/border.png" alt="Technical diagram">
+        </div>
+        <div class="col-md-12 blog-paragraph">
+          <h2>So what the heck is a margin then?</h2>
+          <p>
+              Where padding creates dead space <em>inside</em> an element's border, a margin does the same but <em>outside</em> the border. Again, we are not changing the physical size of our element, however, margins <em>will</em> affect our positioning. To return to our package analogy, imagine adding a margin as not being able to stack parcels in the courier van directly next to each other. The back of our courier van is 1m x 1m in size. Each parcel is 10cm x 10cm in size. Normally we can fit the parcels in the back of the van in 10 rows of 10 parcels. However, because so many packages were being damaged in transit the boss has introduced a new rule (our margin). The rule says each parcel must have 10cm of empty space from each other parcel and <em>any</em> of it's empty space. We can imagine the first parcel fits in no problem; there is 10cm between it and each wall of the van so happy days! When we go to add the next parcel thing start to get a little <em>weird</em>... Because we also need to keep space between the space of last parcel there is now 20cm between the two parcels! If we keep adding parcels we can only fit nine parcels before they start to fall out the back of the van. Another option would be to add this same rule to the top and left hand sides of out parcels. Now, we strike a balance between potentially damaging parcels (those on the bottom and right hand sides) and fitting much more parcels in the van.
+          </p>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+          <h2>Okay, so which should I use?</h2>
+          <p>
+            As a general rule, if you want to clearly define the <em>edge</em> of an element then you can style the border. If you want to move the content <em>inside</em> away from the border without affecting your layout then you probably want some padding. And if you want to move an entire element away from another then your looking at a margin.
+          </p>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+          <h2>And now what?</h2>
             <p>
-              Now that we know what a border is we can talk about padding. Applying padding to an element gives the content inside it a 'cushion' of dead space between it and the border. Think of your content as an important object you are sending out for delivery. The padding is like the bubble-wrap surrounding your important object, and the border is the box it is delivered in. It provides a gap between the object and the box so it the package is dropped then the contents aren't damaged. Now, our padding doesn't actually physically protect the content in any way but  It follows all the rules laid out for the 
+              The best way to understand these concepts is to practice them. Create a new practice project and try spacing out all the content in grids, or pyramids. When you think you have a good grasp on that try find some new tricks; for instance if you add 'margin: 0 auto' your element will have no margin on the top and bottom, and will <span class="strike">magically</span> automatically center itself horizontally within it's parent element. For extra points, find a page that you like and try to block out the basic layout using just empty elements. If you do all three of these steps you should be well on your way to becoming a border, padding, and margin pro!
             </p>
+        </div>
+          <div class=>
+            
+            
+            
+            
+            
+            
+            
+            
+            
           </div>   
         </div>
       </div>

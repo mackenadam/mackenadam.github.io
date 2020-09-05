@@ -127,5 +127,13 @@ hr {
 }
 
 .blog-post {
-    padding: 7% 3%;;
+    padding: 7% 10%;;
+}
+
+.blog-paragraph {
+    margin-top: 25px;
+}
+
+.strike {
+    text-decoration: line-through;
 }
