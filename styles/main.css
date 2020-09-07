@@ -94,6 +94,7 @@ a.nav-link {
     border-radius: 4px;
     box-shadow: 2px 3px 3px #045562;
     color: #f6f3ee;
+    height: 85%;
     margin: 2%;
     padding: 15px;
 }
@@ -110,6 +111,9 @@ a.nav-link {
 
 .blog-card-text {
     font-weight: 300;
+    height: 150px;
+    overflow: auto;
+    margin-bottom: 0;
 }
 
 .blog-card-link {
