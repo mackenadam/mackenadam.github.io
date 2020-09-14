@@ -142,6 +142,11 @@ hr {
     text-decoration: line-through;
 }
 
+.quote {
+    font-style: italic;
+    margin: 50px 50px;
+}
+
 #m-a-quote {
     width: 100%;
     height: auto;
