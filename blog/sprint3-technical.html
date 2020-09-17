@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Functions, loops, and the DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Dancing+Script&family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-between" id="header">
+        <div class="col-md-2 text-center">
+          <img class="header-logo" src="https://via.placeholder.com/75" alt="My logo">
+        </div>
+        <div class="col-md-4 text-center header-title-container">
+          <h1 class="header-title">Adam Macken</h1>
+        </div>
+      </div>
+
+      <ul class="nav nav-pills justify-content-center" id="navi">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blogs</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="sprint1-technical.html">Technical blog 1</a>
+            <a class="dropdown-item" href="sprint1-cultural.html">Personal blog 1</a>
+            <a class="dropdown-item" href="sprint2-technical.html">Technical blog 2</a>
+            <a class="dropdown-item" href="sprint2-cultural.html">Cultural blog 2</a>
+            <a class="dropdown-item" href="sprint3-technical.html">Technical blog 3</a>
+            <a class="dropdown-item" href="sprint3-cultural.html">Cultural blog 3</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Me</a>
+        </li>
+      </ul>
+
+      <div class="row blog-post">
+        <div class="col-md-12">
+            <h1>JavaScript - Functions, loops, arrays, objects, and the DOM</h1>
+            <h2>Sprint Three - Technical Blog Three</h2>
+            <h3>17 September 2020</h3>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+            <h2>Building a house</h2>
+            <p>
+                You can think of making a website with HTML, CSS, and JavaScript as building a house. HTML would be like the anchitect's first draft and structural engineer's report that determine the general features of the house. How many bedrooms do we have? Is there one or two toilets? Do we have a garage or do we have to deal with on-street parking? Is there more than one storey? Do we have doors and windows to the outside world or are we stuck in the same house forever? CSS on the other hand, is the interior designer providing the details. It can do everything right up from determining the size of the rooms, right down to the colour of the paint and the font of the <em class="live-love-laugh">"live, laugh, love"</em> decal on our feature wall. JavaScript provides the utilities. Want running water, flushing toilets, and electricity supplied to your house? That's JavaScript. Normally hidden from view, it is responsible for making sure something actually happens when you flick a light switch, or turn on a tap. Although we can build our house without some of these features it's not until all of these things come together that we have a sturdy, beautiful, and functioning house.
+            </p>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+            <h2>Control flow</h2>
+            <p>
+                One of the ways JavaScript helps us to provide funtionality to our websites is through control flow and loops. How would we go about adding lights to our house? There are a hundred different ways we could achieve this, one way would be with a simple 'if' statement. In psuedo-code this might look like:
+            </p>
+            <p class="quote">
+                -> <em>If</em> the light switch is turned off<br>
+                ---> Turn the switch on<br>
+                ---> Provide electricity to the lightbulb<br>
+                -> Or <em>else</em> if the switch is on<br>
+                ---> Turn the switch off<br>
+                ---> Make sure the lightbulb doesn't get electricity
+            </p>
+            <p>And in vanilla JavaScript:</p>
+            <p class="quote">
+              if (lightSwitchOn === false) {<br>
+                lightSwitchOn = true;<br>
+                provideElectricity = true;<br>
+              } else if (lightSwitchOn === true) {<br>
+                lightSwitchOn = false;<br>
+                provideElectricity = false;<br>
+              }<br>
+            </p>
+            <p>
+              This is a very simplistic example and in a real example you would probably want to have access to a bit more information. For instance, was the light switch already switched on? You might want to make sure that the power is set to be off by default before you start playing around with switches. You might want to make it so that you could reuse these instructions for every switch in the house. We could do this by putting our <em>if</em> statement inside a <em>function</em>. In psuedo-code:
+            </p>
+            <p class="quote">
+              -> Set the light switch to be off to begin with<br>
+              -> Make sure the light bulb isnt getting electricity<br>
+              -> Make our if statement into a function that we can reuse for all light switches<br>
+            </p>
+            <p>As code:</p>
+            <p class="quote">
+              var lightSwitchOn = false;<br>
+              var provideElectricity = false;<br>
+              function toggleLightSwitch () {<br>
+                  if (lightSwitchOn === false) {<br>
+                    lightSwitchOn = true;<br>
+                    provideElectricity = true;<br>
+                  } else if (lightSwitchOn === true) {<br>
+                    lightSwitchOn = false;<br>
+                    provideElectricity = false;<br>
+                  }
+                }
+            </p>
+            <p>
+              Now our code tracks two global variables; one which tracks whether the light switch is on or not, and another which tracks whether electricity should be supplied to the lightbulb. Initially the values are both set to false, meaning that our light switch is off and no electricity is supplied. When we call our function if the switch is already off then it is set to on and electricity is supplied. If it is already on then the opposite is true. Furthermore, our if statement is now contained within a function that we can use for each switch in our house.
+            </p>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+            <h2>Where does the DOM come in?</h2>
+            <p>
+                The DOM, or Document Object Model, provides an interface for HTML, CSS, and JavaScript to work in unison. It provides a representation of our website comprised of nodes similar to a family tree. Starting with the Document, the term used for our HTML file, each element is displayed as a node connected to any parent or children nodes. For instance, the HEAD and BODY elements are both children of the DOCUMENT node. From here each element that is a child of the BODY is also a node, and each of their children are nodes. Likewise, for the HEAD element as shown below:
+            </p>
+            <p>
+              What this allows us to do is to target specific elements using JavaScript and use this to apply some sort of functionality or change. Returning to out light switch analogy, lets say we wanted to apply our function to the BUTTON element of the first div; the only light switch in the master bedroom. We could add an event listener that would look like:
+            </p>
+            <p class="quote">
+              document.getElementByID("switch1").addEventListener("click", toggleLightSwitch);
+            </p>
+            <p>Now an event listener is set to watch our button switch1 and any time it detects a click it will run our function toggleLightSwitch. Pretty nifty!</p>
+        </div>
+        <div class="col-md-12 blog-paragraph">
+            <h2>Arrays != Objects</h2>
+            <p>
+                Often when using the DOM we will return an Array or an Object. Although they look similar there are some major differences between the two. Both store a collection of data rather than one value and both are mutable so the original data inside them can be changed. You can think of an Object as a thing in your code; like a user with values relating to a username, password, and email address. An Array is more of a catalog or list of data. Just to make things really confusing an array can store a collection of Objects (like users), and an Object can have an array as a property (like multiple email addresses).
+            </p>
+        </div>
+      </div>
+    </div>
+
+    
+            
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
