@@ -162,3 +162,13 @@ hr {
 .indent {
     margin-left: 15px;
 }
+
+.image-w100 {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.image-w50 {
+    width: 50%;
+    margin: 25px 0;
+}
